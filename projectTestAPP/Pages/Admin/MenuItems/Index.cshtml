@@ -1,0 +1,33 @@
+﻿@page
+@model projectTestAPP.Pages.Admin.MenuItems.IndexModel
+
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h1 class="text-primary">Menu Item list</h1>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-page="upsert" class="btn btn-primary">
+                <i class="bi bi-plus-square"></i> &nbsp;Create a new MenuItem
+            </a>
+        </div>
+    </div>
+    <br /><br />
+    <table id="DT_load" class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Food Item</th>
+                <th>Action</th>   
+
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts{
+    <script src="~/js/menuItem.js"></script>
+}
